@@ -25,7 +25,7 @@ Infra: Docker, GitHub Actions, AWS (optional)
 
 🗂️ Folder Structure
 
-'''
+```
 quant-projects/
 │
 ├── order-book-simulator/
@@ -34,7 +34,7 @@ quant-projects/
 ├── internal-quantops-dashboard/
 ├── data-explainability-engine/
 └── README.md
-'''
+```
 
 🔗 Portfolio Integration
 
