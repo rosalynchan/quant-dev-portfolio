@@ -3,7 +3,7 @@ A curated collection of quantitative developer projects including order book sim
 
 ## Project Overview
 
-### Order Book Simulator
+#### Order Book Simulator
 - Simulates order flow and book dynamics under HFT settings
 
 #### Tick Data Replay Engine
