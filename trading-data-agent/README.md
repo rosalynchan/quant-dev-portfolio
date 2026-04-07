@@ -254,7 +254,6 @@ python -m src.main sample
 # Run tests
 pytest tests/ -v
 ```
-
 ---
 
 ## Author
