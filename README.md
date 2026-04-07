@@ -1,53 +1,124 @@
-# quant-dev-portfolio-projects
-A curated collection of quantitative developer projects including order book simulation, tick data replay, ETL pipelines, internal dashboards, and explainability engines — built for high-frequency trading and quant infrastructure/platform engineer role. 
+# Four AI Agent Projects for Trading Infrastructure
 
-## Project Overview
+## Overview
 
-#### Order Book Simulator
-- Simulates order flow and book dynamics under HFT settings
+Four integrated projects demonstrating multi-agent system design for quantitative trading operations.
 
-#### Tick Data Replay Engine
-- Replays historical tick data with adjustable latency and concurrency
+---
 
-#### Quant ETL Pipeline
-- Extracts, transforms, and loads large-scale financial datasets
+## Project 1: Trading Data Multi-Agent Assistant
 
-#### Internal QuantOps Dashboard
-- Web-based dashboard for pipeline monitoring and signal visualization
+**Purpose**: Automate trading data ingestion, quality assurance, and reporting.
 
-#### Data Explainability Engine
-- Provides feature contribution & model transparency reports
+**Key Features**:
+- Load data from multiple formats (CSV, Parquet, Excel)
+- Detect and fix data quality issues (missing values, duplicates, anomalies)
+- Generate analysis-ready datasets with quality reports
 
-## Tech Stack
-Languages: Python, SQL
-Tools: Pandas, NumPy, FastAPI, Plotly/Dash, Redis, PostgreSQL
-Infra: Docker, GitHub Actions, AWS (optional)
+**Agents**: IngestionAgent, CleaningAgent, AnalysisAgent, ReportingAgent
 
-🗂️ Folder Structure
+**Repository**: github.com/rosalynchan/quant-dev-portfolio/trading-data-agent
+
+---
+
+## Project 2: Quant ETL Multi-Agent Pipeline
+
+**Purpose**: Build intelligent ETL system with validation, drift detection, and reconciliation.
+
+**Key Features**:
+- Auto-detect and validate data schema
+- Detect statistical drift in data distributions
+- Reconcile data from multiple sources
+- Generate SQL queries for analytics
+
+**Agents**: SourceAgent, ValidationAgent, DriftAgent, ReconcileAgent, SQLAgent
+
+**Repository**: github.com/rosalynchan/quant-dev-portfolio/quant-etl-agent
+
+---
+
+## Project 3: Explainability Agent Engine
+
+**Purpose**: Generate natural language explanations for metric changes.
+
+**Key Features**:
+- Load and evaluate explanation rules
+- Classify metrics as explained/unexplained
+- Generate human-readable explanations automatically
+- Learn from feedback to improve rules
+
+**Agents**: RuleAgent, ClassifyAgent, ExplainAgent, FeedbackAgent
+
+**Repository**: github.com/rosalynchan/quant-dev-portfolio/explainability-agent
+
+---
+
+## Project 4: QuantOps Agent Engine
+
+**Purpose**: Unified platform integrating all three projects into one intelligent system.
+
+**Key Features**:
+- Orchestrates all agents from Projects 1-3
+- RESTful API for data and metric operations
+- Real-time dashboard with metrics and explanations
+- Complete workflow: Load → Validate → Analyze → Explain → Report
+
+**Agents**: PlannerAgent (orchestration) + all agents from Projects 1-3
+
+**Repository**: github.com/rosalynchan/quant-dev-portfolio/quantops-agent-engine
+
+---
+
+## Integration Flow
 
 ```
-quant-projects/
-│
-├── order-book-simulator/
-├── tick-data-replay-engine/
-├── quant-etl-pipeline/
-├── internal-quantops-dashboard/
-├── data-explainability-engine/
-└── README.md
+Project 1: Data Loading & Cleaning
+    ↓
+Project 2: Validation & Drift Detection
+    ↓
+Project 3: Explanation Generation
+    ↓
+Project 4: Complete Integrated Platform
 ```
 
-🔗 Portfolio Integration
+---
 
-Each project links to:
+## Technology Stack
 
-- 📄 Detailed README
+- **Language**: Python 3.10+
+- **Agent Framework**: LangChain, LangGraph
+- **Data Processing**: Pandas, NumPy, Polars
+- **Database**: PostgreSQL, SQLite
+- **API**: FastAPI
+- **Dashboard**: Plotly, Jinja2 templates
+- **Testing**: Pytest
+- **Deployment**: Docker, Kubernetes ready
 
-- 🛠 Architecture & Performance Highlights
+---
 
-- ✅ Unit/Integration Tests
+## Project Status
 
-- 📊 Visual/Interactive Outputs (for dashboard projects)
+- **Project 1**: Architecture & implementation (8 weeks)
+- **Project 2**: Architecture & implementation (10 weeks)
+- **Project 3**: Architecture & implementation (8 weeks)
+- **Project 4**: Integration layer (12 weeks)
 
-A Notion-based Project Management Page and Portfolio Page are included for daily tasks, notes, and interview sharing (links coming soon).
+**Total Timeline**: 8-12 weeks for complete implementation
 
-🧑‍💻 Built by Rosalyn Xiaoqing | London-based Quant Platform Developer | GitHub Profile 
+---
+
+## Key Files
+
+Each project includes:
+- Complete requirements documentation
+- System architecture and design
+- API reference
+- Example code and sample data
+- Comprehensive test suite
+- Deployment configurations
+
+---
+
+**Status**: 🟡 All projects in active development
+
+**License**: MIT
