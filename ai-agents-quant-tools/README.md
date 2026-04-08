@@ -98,11 +98,11 @@ Project 4: Complete Integrated Platform
 
 ## Project Status
 
-🟡 **Building** Core architecture is defined. 
+**Building** Core architecture is defined. 
 Currently working through the implementation in phases. Code examples coming as features are built out.
 ---
 
-**Status**: 🟡 All projects in active development
+**Status**: All projects in active development
 
 - **Project 1**: Architecture & implementation (8 weeks)
 - **Project 2**: Architecture & implementation (10 weeks)
