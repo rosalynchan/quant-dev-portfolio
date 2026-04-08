@@ -49,7 +49,7 @@ Four integrated projects demonstrating multi-agent system design for quantitativ
 
 **Agents**: RuleAgent, ClassifyAgent, ExplainAgent, FeedbackAgent
 
-**Repository**: github.com/rosalynchan/quant-dev-portfolio/explainability-agent
+**Repository**: https://github.com/rosalynchan/quant-dev-portfolio/tree/main/explainability-agent
 
 ---
 
