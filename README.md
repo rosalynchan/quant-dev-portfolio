@@ -98,9 +98,8 @@ Project 4: Complete Integrated Platform
 
 ## Project Status
 
-🟡 **Building** - Core architecture is defined. Currently working through the 
-implementation in phases. Documentation and design specs are in `/docs`. 
-Code examples coming as features are built out.
+🟡 **Building** Core architecture is defined. 
+Currently working through the implementation in phases. Code examples coming as features are built out.
 ---
 
 **Status**: 🟡 All projects in active development
