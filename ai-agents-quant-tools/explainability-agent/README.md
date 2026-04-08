@@ -4,7 +4,7 @@ AI-powered system for generating natural language explanations for metric change
 
 ## Current Status
 
-🟡 **Design Phase Only** - Requirements and system design documented. Code not started.
+**Design Phase Only** - Requirements and system design documented. Code not started.
 
 ## What's Documented
 

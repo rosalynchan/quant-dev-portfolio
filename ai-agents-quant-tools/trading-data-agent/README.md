@@ -15,7 +15,7 @@ Uses specialized AI agents that work together:
 
 ## Status
 
-🟡 In Progress - Architecture and design completed. Implementation underway.
+In Progress - Architecture and design completed. Implementation underway.
 
 ## Getting Started
 

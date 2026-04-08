@@ -4,7 +4,7 @@ Intelligent ETL system with validation, drift detection, and reconciliation.
 
 ## Current Status
 
-🟡 **Design Phase Only** - Architecture and requirements documented. Implementation not started.
+**Design Phase Only** - Architecture and requirements documented. Implementation not started.
 
 ## What's Documented
 
