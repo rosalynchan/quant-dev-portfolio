@@ -133,11 +133,11 @@ Icon means:
 
 ## 📊 Quant Data Systems
 
-| Topic | Progress |
-|------|--------|
-| KDB+ / q | ⬜ |
-| Time-series data modeling | ⬜ |
-| Market data processing | ⬜ |
+| Topic | Resource | Progress |
+|------|--------|---------|
+| KDB+ / q | https://www.tutorialspoint.com/kdbplus/index.htm| ⬜ |
+| Time-series data modeling | | ⬜ |
+| Market data processing | | ⬜ |
 
 ---
 
