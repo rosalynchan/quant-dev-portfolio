@@ -3,7 +3,7 @@
 ## Status
 
 🟡 **Design Phase** This document specifies the system architecture and design. 
-Implementation of agents has not started yet.
+Implementation of agents has not started yet. Coming soon :)
 
 ---
 
