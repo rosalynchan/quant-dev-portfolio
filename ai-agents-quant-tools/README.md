@@ -109,6 +109,12 @@ Currently working through the implementation in phases. Code examples coming as 
 - **Project 3**: Architecture & implementation (8 weeks)
 - **Project 4**: Integration layer (12 weeks)
 
-**Total Timeline**: 8-12 weeks for complete implementation
+Implementation plan:
+P1:  ████████ (8w)
+P2:          ██████████ (10w)
+P3:          ████████ (8w, overlaps P2)
+P4:                    ████████████ (12w, starts after P1+P2+P3)
+
+**Total Timeline**: ~31 weeks / ~7-8 months total for complete implementation
 
 **License**: MIT
