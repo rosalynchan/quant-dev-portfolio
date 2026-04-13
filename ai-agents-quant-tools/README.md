@@ -17,7 +17,7 @@ Four integrated projects demonstrating multi-agent system design for quantitativ
 
 **Agents**: IngestionAgent, CleaningAgent, AnalysisAgent, ReportingAgent
 
-**Repository**: [github.com/rosalynchan/quant-dev-portfolio/trading-data-agent](https://github.com/rosalynchan/quant-dev-portfolio/tree/main/trading-data-agent)
+**Repository**: [github.com/rosalynchan/quant-dev-portfolio/trading-data-agent](https://github.com/rosalynchan/quant-dev-portfolio/tree/main/ai-agents-quant-tools/trading-data-agent)
 
 ---
 
