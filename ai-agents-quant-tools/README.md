@@ -65,7 +65,7 @@ Four integrated projects demonstrating multi-agent system design for quantitativ
 
 **Agents**: PlannerAgent (orchestration) + all agents from Projects 1-3
 
-**Repository**: [github.com/rosalynchan/quant-dev-portfolio/tree/main/quantops-agent-engine](https://github.com/rosalynchan/quant-dev-portfolio/tree/main/quantops-agent-engine)
+**Repository**: [github.com/rosalynchan/quant-dev-portfolio/tree/main/quantops-agent-engine](https://github.com/rosalynchan/quant-dev-portfolio/tree/main/ai-agents-quant-tools/quantops-agent-engine)
 
 ---
 
