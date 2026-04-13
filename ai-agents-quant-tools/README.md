@@ -33,7 +33,7 @@ Four integrated projects demonstrating multi-agent system design for quantitativ
 
 **Agents**: SourceAgent, ValidationAgent, DriftAgent, ReconcileAgent, SQLAgent
 
-**Repository**: [github.com/rosalynchan/quant-dev-portfolio/quant-etl-agent](https://github.com/rosalynchan/quant-dev-portfolio/tree/main/quant-etl-agent)
+**Repository**: [github.com/rosalynchan/quant-dev-portfolio/quant-etl-agent](https://github.com/rosalynchan/quant-dev-portfolio/tree/main/ai-agents-quant-tools/quant-etl-agent)
 
 ---
 
