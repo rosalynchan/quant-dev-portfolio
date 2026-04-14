@@ -110,10 +110,16 @@ Currently working through the implementation in phases. Code examples coming as 
 - **Project 4**: Integration layer (12 weeks)
 
 Implementation plan:
+```
 P1:  ████████ (8w)
 P2:          ██████████ (10w)
 P3:          ████████ (8w, overlaps P2)
 P4:                    ████████████ (12w, starts after P1+P2+P3)
+```
+
+* P1: weeks 1-8
+* P2 + P3 in parallel: weeks 9-19 (~10w for the longer one)
+* P4: weeks 20-31
 
 **Total Timeline**: ~31 weeks / ~7-8 months total for complete implementation
 
