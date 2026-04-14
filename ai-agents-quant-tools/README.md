@@ -246,7 +246,7 @@ Project 4: Complete Integrated Platform
 
 **Current**: P1 actively in development. P2, P3, P4 not yet started.
 
-Core architecture is defined for all four projects. Implementation progressing in phases — code pushed as each phase completes.
+Core architecture is defined for all four projects. Implementation progressing in phases， code pushed as each phase completes.
 
 **Implementation Timeline**:
 ```
