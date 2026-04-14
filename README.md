@@ -7,7 +7,7 @@ to become a **Quant Developer focused on AI-native trading systems**.
 
 ---
 
-## 🧠 About This Repository
+## About This Repository
 
 This is a **living repository** where I continuously:
 
@@ -19,18 +19,18 @@ This repo serves as a **central hub** for all my learning, projects, and system 
 
 ---
 
-## 🎯 Current Focus
+## Current Focus
 
 - AI Agents for Quantitative Finance
 - Trading Data Infrastructure
 - End-to-end Quant Systems Design
 
-📍 Main Project:
+Main Project:
 - ai-agents-quant-tools
 
 ---
 
-# 📊 Quantified Learning System
+# Quantified Learning System 
 
 I track my growth like a quant system, using measurable metrics across:
 
@@ -40,7 +40,7 @@ I track my growth like a quant system, using measurable metrics across:
 
 ---
 
-## 📈 Current Metrics
+## Current Metrics
 
 | Metric | Value |
 |-------|------|
@@ -51,7 +51,7 @@ I track my growth like a quant system, using measurable metrics across:
 
 ---
 
-## 🧠 Skill Depth Tracking
+## Skill Depth Tracking
 
 Depth Scale:
 0 = Seen  
@@ -85,7 +85,7 @@ Icon means:
 
 ---
 
-# 🧠 Core Skills
+# Core Skills
 
 > Foundational skills for quant development
 
@@ -120,7 +120,7 @@ Icon means:
 
 # ⚡ Specialization: Quant + AI Systems
 
-## 🤖 AI Agents & LLM Systems
+## AI Agents & LLM Systems
 
 | Topic | Progress |
 |------|--------|
@@ -131,7 +131,7 @@ Icon means:
 
 ---
 
-## 📊 Quant Data Systems
+## Quant Data Systems
 
 | Topic | Resource | Progress |
 |------|--------|---------|
@@ -151,7 +151,7 @@ Icon means:
 
 ---
 
-## 🚀 Performance Engineering
+## Performance Engineering
 
 | Topic | Progress |
 |------|--------|
@@ -161,7 +161,7 @@ Icon means:
 
 ---
 
-## ☁️ Cloud & Infrastructure
+## Cloud & Infrastructure
 
 | Topic | Progress |
 |------|--------|
@@ -171,7 +171,7 @@ Icon means:
 
 ---
 
-## 🖥️ Frontend (Trading Tools)
+## Frontend (Trading Tools)
 
 | Topic | Progress |
 |------|--------|
@@ -181,7 +181,7 @@ Icon means:
 
 ---
 
-# 📅 2026 Roadmap
+# 2026 Roadmap
 
 ## Q2
 - AI Agent systems (core focus)
@@ -197,7 +197,7 @@ Icon means:
 
 ---
 
-# 📈 Weekly Progress Log
+# Weekly Progress Log
 
 ## Week 1
 - Designed multi-agent architecture
@@ -209,7 +209,7 @@ Icon means:
 
 ---
 
-# 🔄 Philosophy
+# Philosophy
 
 - Build while learning  
 - Focus on real trading use cases  
