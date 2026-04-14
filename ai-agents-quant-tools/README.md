@@ -69,7 +69,7 @@ I built this as a **personal side project** to explore how AI Agents can solve r
 **Agents**: `IngestionAgent` `CleaningAgent` `AnalysisAgent` `ReportingAgent` `PlannerAgent`
 
 **Tech Stack**:
-`OpenAI Agents SDK` | `LangGraph` | `LangChain` | `Pandas` | `Jinja2` | `Plotly`
+`OpenAI Agents SDK` | `LangGraph` | `LangChain` | `Pandas` | `Jinja2` | `Plotly` *(FastAPI + React + TypeScript dashboard upgrade planned)*
 
 **Architecture**:
 ```
@@ -107,7 +107,7 @@ It's inspired by real challenges I face in my job — drift detection, reconcili
 **Agents**: `SourceAgent` `ValidationAgent` `DriftAgent` `ReconcileAgent` `SQLAgent` `ReportingAgent` `PlannerAgent`
 
 **Tech Stack**:
-`LangGraph` | `Pandas` | `Polars` | `SQLite` | `FastAPI` | `Plotly` | `Jinja2` *(React + TypeScript upgrade planned)*
+`LangGraph` | `Pandas` | `Polars` | `SQLite` | `Plotly` | `Jinja2` *(FastAPI + React + TypeScript dashboard upgrade planned)*
 
 **Architecture**:
 ```
@@ -149,7 +149,7 @@ I created this **as a personal side project** to take that concept further with 
 **Agents**: `RuleAgent` `ClassifyAgent` `ExplainAgent` `FeedbackAgent` `ReportAgent`
 
 **Tech Stack**:
-`OpenAI Agents SDK` | `Pandas` | `Custom Rule Engine` | `Jinja2` | `Plotly` *(React + TypeScript upgrade planned)*
+`OpenAI Agents SDK` | `Pandas` | `Custom Rule Engine` | `Jinja2` | `Plotly` *(FastAPI + React + TypeScript dashboard upgrade planned)*
 
 **Perfect for**:
 - Trading metric explainability
@@ -234,8 +234,8 @@ Project 4: Complete Integrated Platform
 | **Data Processing** | Pandas, NumPy, Polars |
 | **Statistical Analysis** | SciPy, Scikit-learn |
 | **Databases** | PostgreSQL, SQLite |
-| **API** | FastAPI, Uvicorn, Pydantic |
-| **Dashboard (P1-P3)** | Plotly, Jinja2 |
+| **API (P4 only)** | FastAPI, Uvicorn, Pydantic |
+| **Dashboard (P1-P3)** | Plotly, Jinja2 *(FastAPI + React + TypeScript upgrade planned)* |
 | **Dashboard (P4)** | React, TypeScript, Plotly, WebSockets |
 | **Testing** | Pytest |
 | **Deployment** | Docker, Kubernetes ready |
