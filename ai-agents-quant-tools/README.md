@@ -277,6 +277,7 @@ Each project includes:
 
 Design documentation will be added to each project's /docs/ folder as implementation progresses.
 Above path are just in planning
+
 ---
 
 ## Key Technical Decisions
