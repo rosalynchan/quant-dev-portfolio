@@ -80,7 +80,7 @@ Icon means:
 |--------|-----------|--------|
 | Trading Data Agent | ⭐⭐⭐⭐ | 🔄 |
 | Quant ETL Agent | ⭐⭐⭐⭐ | ⬜ |
-| Explainability Agent | ⭐⭐⭐⭐⭐ | 🔄 |
+| Explainability Agent | ⭐⭐⭐⭐⭐ | ⬜ |
 | QuantOps Engine | ⭐⭐⭐⭐⭐ | ⬜ |
 
 ---
@@ -103,8 +103,8 @@ Icon means:
 
 | Topic | Progress |
 |------|--------|
-| FastAPI / backend architecture | 🔄 |
-| REST API design | 🔄 |
+| FastAPI / backend architecture | ⬜ |
+| REST API design | ⬜ |
 | Distributed systems basics | ⬜ |
 
 ---
@@ -124,7 +124,7 @@ Icon means:
 
 | Topic | Progress |
 |------|--------|
-| LangChain / LangGraph | 🔄 |
+| LangChain / LangGraph | ⬜ |
 | Multi-agent system design | 🔄 |
 | RAG systems | ⬜ |
 | Agent evaluation & monitoring | ⬜ |
@@ -135,7 +135,7 @@ Icon means:
 
 | Topic | Resource | Progress |
 |------|--------|---------|
-| KDB+ / q | https://www.tutorialspoint.com/kdbplus/index.htm| ⬜ |
+| KDB+ / q | https://code.kx.com/q/learn/brief-introduction/| ⬜ |
 | Time-series data modeling | | ⬜ |
 | Market data processing | | ⬜ |
 
@@ -166,7 +166,7 @@ Icon means:
 | Topic | Progress |
 |------|--------|
 | AWS (Solutions Architect Professional) | ⬜ |
-| Docker & Kubernetes | 🔄 |
+| Docker & Kubernetes | ⬜  |
 | Cloud-native systems | ⬜ |
 
 ---
