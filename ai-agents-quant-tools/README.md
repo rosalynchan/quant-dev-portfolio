@@ -69,7 +69,7 @@ I built this as a **personal side project** to explore how AI Agents can solve r
 **Agents**: `IngestionAgent` `CleaningAgent` `AnalysisAgent` `ReportingAgent` `PlannerAgent`
 
 **Tech Stack**:
-`OpenAI Agents SDK` | `LangGraph` | `LangChain` | `Pandas` | `FastAPI` | `Jinja2` | `Plotly` *(React + TypeScript upgrade planned)*
+`OpenAI Agents SDK` | `LangGraph` | `LangChain` | `Pandas` | `Jinja2` | `Plotly`
 
 **Architecture**:
 ```
@@ -235,7 +235,7 @@ Project 4: Complete Integrated Platform
 | **Statistical Analysis** | SciPy, Scikit-learn |
 | **Databases** | PostgreSQL, SQLite |
 | **API** | FastAPI, Uvicorn, Pydantic |
-| **Dashboard (P1-P3)** | Plotly, Jinja2 *(React + TypeScript upgrade planned)* |
+| **Dashboard (P1-P3)** | Plotly, Jinja2 |
 | **Dashboard (P4)** | React, TypeScript, Plotly, WebSockets |
 | **Testing** | Pytest |
 | **Deployment** | Docker, Kubernetes ready |
