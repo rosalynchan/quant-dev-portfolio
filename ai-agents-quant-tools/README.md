@@ -275,6 +275,8 @@ Each project includes:
 | **`/docs/design_decisions.md`** | Why we chose X over Y, trade-offs, learnings |
 | **`README.md`** | Project overview, agent responsibilities, getting started |
 
+Design documentation will be added to each project's /docs/ folder as implementation progresses.
+Above path are just in planning
 ---
 
 ## Key Technical Decisions
