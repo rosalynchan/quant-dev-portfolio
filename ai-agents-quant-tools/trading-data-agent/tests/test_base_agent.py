@@ -117,3 +117,5 @@ def test_errors_list_initialized_if_missing():
     
     assert "errors" in result_state
     assert len(result_state["errors"]) > 0
+    
+print("test_base_agent.py ran successfully")
