@@ -16,14 +16,14 @@ The first investigation should align meaning before comparing numbers. One sourc
 
 The dirty price of a fixed-rate bond is the present value of coupons and principal:
 
-[
+$$
 DirtyPrice
 =
-sum_{i=1}^{n}
+\sum_{i=1}^{n}
 rac{Coupon_i}{(1+y/m)^{m t_i}}
 +
 rac{Principal}{(1+y/m)^{mT}}
-]
+$$
 
 Bond prices are commonly quoted per 100 of face value. A displayed price of 101.65 therefore does not mean GBP 101.65 for the whole position.
 
@@ -31,32 +31,32 @@ Bond prices are commonly quoted per 100 of face value. A displayed price of 101.
 
 The central reconciliation is:
 
-[
+$$
 DirtyPrice=CleanPrice+AccruedInterest
-]
+$$
 
 Clean price excludes interest accumulated since the last coupon date. This convention prevents the quoted market series from rising mechanically every day and dropping on coupon dates.
 
 Accrued interest can be approximated by:
 
-[
+$$
 AI
 =
 CouponPayment
 	imes
 rac{DaysSinceLastCoupon}
 {DaysInCouponPeriod}
-]
+$$
 
 The exact result depends on schedule, settlement date, day-count convention and ex-coupon rules.
 
 Dirty price, also called full price, includes accrued interest and forms the basis of settlement consideration:
 
-[
+$$
 SettlementAmount
-approx
+\approx
 FaceAmount	imesrac{DirtyPrice}{100}
-]
+$$
 
 ## Worked Example
 
@@ -71,49 +71,49 @@ Consider a simplified GBP bond:
 
 Accrued interest is:
 
-[
+$$
 AI=3	imes0.5=1.50
-]
+$$
 
 Therefore:
 
-[
+$$
 DirtyPrice=101.65+1.50=103.15
-]
+$$
 
 The two displayed prices are consistent.
 
 Settlement amount is:
 
-[
+$$
 GBP 10{,}000{,}000	imes103.15/100
 =
 GBP 10{,}315{,}000
-]
+$$
 
 The accrued-interest cash amount is GBP 150,000.
 
 Now assume modified duration is 1.8 and yield rises by 10bp. The duration approximation gives:
 
-[
-rac{Delta P}{P}approx-D_{mod}Delta y
-]
+$$
+rac{\Delta P}{P}\approx-D_{mod}\Delta y
+$$
 
-[
-Delta P
-approx
+$$
+\Delta P
+\approx
 -1.8	imes0.001	imes103.15
 =
 -0.18567
-]
+$$
 
 For GBP 10 million face, approximate PnL is:
 
-[
+$$
 10{,}000{,}000	imes(-0.18567)/100
 =
 -GBP 18{,}567
-]
+$$
 
 This is a first-order estimate. Full revaluation captures convexity and exact cash-flow timing.
 
@@ -121,9 +121,9 @@ This is a first-order estimate. Full revaluation captures convexity and exact ca
 
 The coupon rate defines contractual payments. Yield to maturity is the single discount rate that reproduces the current dirty price:
 
-[
+$$
 DirtyPrice=PV(Cashflows,YTM)
-]
+$$
 
 Price and yield usually move in opposite directions. A longer-duration bond generally reacts more strongly to the same yield move.
 
