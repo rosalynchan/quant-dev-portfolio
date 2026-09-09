@@ -14,15 +14,15 @@ The answer depends on direction, notional, schedule conventions, reference index
 
 A vanilla fixed-for-floating interest rate swap has a fixed leg and a floating leg. For notional (N), fixed rate (K), and accrual fraction (alpha_i):
 
-[
+$$
 Fixed\ Coupon_i=N K\alpha_i
-]
+$$
 
 A floating coupon is generally:
 
-[
+$$
 Floating\ Coupon_i=N(L_i+s)\alpha_i
-]
+$$
 
 where (L_i) is an observed fixing or projected forward and (s) is a contractual spread. Standard swaps normally use notional as a calculation base rather than exchanging principal.
 
@@ -32,38 +32,38 @@ Direction is fundamental. Receive-fixed/pay-floating trades generally gain when 
 
 For a receive-fixed trade:
 
-[
+$$
 PV_{swap}=PV_{fixed}-PV_{floating}
-]
+$$
 
 The fixed leg is:
 
-[
+$$
 PV_{fixed}=N K\sum_i\alpha_iDF(t_i)
-]
+$$
 
 Define the swap annuity:
 
-[
+$$
 A=\sum_i\alpha_iDF(t_i)
-]
+$$
 
 Then (PV_{fixed}=NKA). Some desks use PV01 for notional times annuity times one basis point. An API should make clear whether it returns an annuity, an unsigned currency-per-bp amount, or signed risk.
 
 Under a simplified single-curve framework:
 
-[
+$$
 PV_{floating}=N(1-DF(t_n))
-]
+$$
 
 ## Deriving the Par Rate
 
 The par swap rate makes net PV zero:
 
-[
+$$
 K_{par}=\frac{1-DF(t_n)}
 {\sum_i\alpha_iDF(t_i)}
-]
+$$
 
 It is therefore not an isolated quote. It is a curve- and convention-dependent break-even rate.
 
@@ -79,42 +79,42 @@ Consider a two-year receive-fixed swap with:
 
 The annuity is:
 
-[
+$$
 A=0.96+0.91=1.87
-]
+$$
 
 The floating-leg PV is:
 
-[
+$$
 PV_{floating}=10{,}000{,}000(1-0.91)=GBP\ 900{,}000
-]
+$$
 
 The par rate is:
 
-[
+$$
 K_{par}=0.09/1.87=4.8128\%
-]
+$$
 
 At par, fixed-leg PV is also approximately GBP 900,000 and net PV is near zero.
 
 If the trader receives 5%:
 
-[
+$$
 PV_{fixed}=10{,}000{,}000\times0.05\times1.87
 =GBP\ 935{,}000
-]
+$$
 
 Therefore:
 
-[
+$$
 PV_{swap}=+GBP\ 35{,}000
-]
+$$
 
 The coupon is 18.72bp above par. Equivalently:
 
-[
+$$
 PV\approx N A(K-K_{par})\approx GBP\ 35{,}000
-]
+$$
 
 This provides an effective desk bridge from a rate difference to a monetary valuation.
 
@@ -130,9 +130,9 @@ Production pricing usually separates:
 
 The general floating-leg value is:
 
-[
+$$
 PV_{float}=N\sum_i(F_i+s)\alpha_iDF(t_i)
-]
+$$
 
 Here (F_i) comes from the projection curve and (DF(t_i)) from the discount curve. The single-curve formula remains valuable for intuition, while the curve set must be explicit in production.
 
