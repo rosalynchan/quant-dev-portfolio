@@ -248,14 +248,12 @@ The ranking function should not silently drop a candidate with missing data and 
 
 CTD analytics should be invalidated when any material dependency changes:
 
-```text
-cash bond prices
-futures price
-repo assumptions
-curve snapshot
-deliverable basket or conversion factors
-delivery-date policy
-```
+- cash bond prices
+- futures price
+- repo assumptions
+- curve snapshot
+- deliverable basket or conversion factors
+- delivery-date policy
 
 A change in the top-ranked candidate should emit a `CTD_SWITCH` event and recompute futures DV01, hedge ratio and PnL attribution.
 
@@ -276,16 +274,14 @@ Core controls should include:
 
 Useful metrics include:
 
-```text
-deliverable_basket_coverage_ratio
-ctd_candidate_count
-ctd_switch_total{contract}
-ctd_runner_up_gap_points
-conversion_factor_missing_total
-mixed_market_cut_rejection_total
-futures_dv01_age_seconds
-hedge_residual_dv01
-```
+- `deliverable_basket_coverage_ratio`
+- `ctd_candidate_count`
+- `ctd_switch_total{contract}`
+- `ctd_runner_up_gap_points`
+- `conversion_factor_missing_total`
+- `mixed_market_cut_rejection_total`
+- `futures_dv01_age_seconds`
+- `hedge_residual_dv01`
 
 The runner-up gap is operationally important. A tiny gap means the CTD is unstable, and a deterministic dashboard may otherwise appear to jump unpredictably between candidates.
 
