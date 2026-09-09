@@ -60,11 +60,9 @@ After fixing, that projection sensitivity should be near zero. Discount sensitiv
 
 ## Isolating Fixing PnL
 
-```text
-S0: prior positions + prior curves + fixing projected
-S1: same positions + current curves + fixing still projected
-S2: same positions + current curves + observed fixing applied
-```
+- **S0:** prior positions + prior curves + fixing projected
+- **S1:** same positions + current curves + fixing still projected
+- **S2:** same positions + current curves + observed fixing applied
 
 $$
 MarketPnL=PV(S1)-PV(S0)
