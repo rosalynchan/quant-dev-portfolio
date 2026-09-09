@@ -75,11 +75,9 @@ A weekend matters too. Friday close to Monday close normally advances three cale
 
 Use three valuation states:
 
-```text
-S0: opening positions + Friday close market + Friday clock
-S1: opening positions + rolled Friday market + Monday clock
-S2: opening positions + Monday close market + Monday clock
-```
+- **S0:** opening positions + Friday close market + Friday clock
+- **S1:** opening positions + rolled Friday market + Monday clock
+- **S2:** opening positions + Monday close market + Monday clock
 
 Then:
 
