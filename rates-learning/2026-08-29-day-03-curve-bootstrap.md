@@ -21,15 +21,15 @@ A curve may be represented as:
 
 With annual compounding:
 
-[
+$$
 DF(t)=\frac{1}{(1+z(t))^t}
-]
+$$
 
 A one-year forward between years one and two satisfies:
 
-[
+$$
 1+F(1Y,2Y)=\frac{DF(1Y)}{DF(2Y)}
-]
+$$
 
 Markets usually quote instruments, not a complete daily discount-factor function. A curve builder finds nodes that reproduce those market instruments.
 
@@ -45,9 +45,9 @@ Bootstrapping proceeds from short maturities to long maturities:
 
 The central invariant is:
 
-[
+$$
 ModelQuote_i(Curve)\approx MarketQuote_i
-]
+$$
 
 A process-level success signal is insufficient if the curve cannot reprice its own inputs.
 
@@ -57,39 +57,39 @@ Assume annual payments, unit notional, a single-curve framework, a 1Y par swap r
 
 For the 1Y instrument:
 
-[
+$$
 0.04DF(1)+DF(1)=1
-]
+$$
 
 Therefore:
 
-[
+$$
 DF(1)=1/1.04=0.961538
-]
+$$
 
 For the 2Y par swap:
 
-[
+$$
 0.045[DF(1)+DF(2)]+DF(2)=1
-]
+$$
 
 Solving the next node:
 
-[
+$$
 DF(2)=\frac{1-0.045DF(1)}{1.045}=0.915532
-]
+$$
 
 The corresponding two-year zero rate is:
 
-[
+$$
 z(2)=DF(2)^{-1/2}-1=4.5113\%
-]
+$$
 
 The implied one-year forward from year one to year two is:
 
-[
+$$
 F(1Y,2Y)=\frac{DF(1)}{DF(2)}-1=5.0251\%
-]
+$$
 
 This illustrates why par, zero, and forward rates must not be treated as interchangeable fields. The 2Y par quote is 4.50%, the 2Y zero rate is approximately 4.51%, and the second-year forward is approximately 5.03%.
 
