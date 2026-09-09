@@ -160,19 +160,15 @@ class VanillaSwap:
 
 Sparse fields such as rate and maturity cannot reproduce a schedule reliably. Calendars, frequencies, day-count rules, business-day adjustments, and stub conventions are valuation inputs.
 
-```text
-Trade economics
-      |
-Schedule generation <--- calendars and conventions
-      |
-Fixing resolution <------ historical fixing store
-      |
-Forward projection <----- projection curve
-      |
-Discounting <------------ discount curve
-      |
-Leg PVs -> Net PV -> Risk -> PnL
-```
+1. Trade economics
+2. Schedule generation
+3. Fixing resolution
+4. Forward projection
+5. Discounting
+6. Leg PVs
+7. Net PV
+8. Risk
+9. PnL
 
 ```python
 def price_receive_fixed_swap(trade, curves, fixings, as_of):
