@@ -21,10 +21,10 @@ A developer needs to establish whether:
 
 A generic bridge is:
 
-\[
+$$
 TotalPnL=
 Rates+Spread+Time+Accrual+Cash+Activity+FX+Model/Data+Residual
-\]
+$$
 
 Rates PnL captures risk-free or government-curve movement. Spread PnL captures credit-spread movement. Time includes carry, ageing and roll-down. Accrual captures the change in accrued coupon when reported separately. Cash contains coupons, principal and settlements. Activity isolates changes in position population. Model/Data covers methodology, benchmark, reference-data and price-source changes.
 
@@ -34,13 +34,13 @@ Desk conventions differ. Some combine accrual with carry; others embed it in dir
 
 First-order checks are useful:
 
-\[
+$$
 RatesPnL\approx CurveDV01\times CurveMove
-\]
+$$
 
-\[
+$$
 SpreadPnL\approx CS01\times SpreadMove
-\]
+$$
 
 With signed risk, a long bond normally has negative curve DV01 and CS01. A rally is a negative rate move and therefore creates positive rate PnL; spread widening is a positive spread move and creates negative spread PnL.
 
@@ -61,48 +61,48 @@ Assume the opening risk and market moves are:
 
 The rate estimate is:
 
-\[
+$$
 (-6,000)\times(-8)=+GBP\ 48,000
-\]
+$$
 
 The spread estimate is:
 
-\[
+$$
 (-4,000)\times15=-GBP\ 60,000
-\]
+$$
 
 Linear explained PnL is:
 
-\[
+$$
 48-60+9+20-2=+GBP\ 15,000
-\]
+$$
 
 The residual is -GBP 141,000. That is too large to dismiss as ordinary convexity.
 
 Investigation finds that the risk feed covered GBP 10 million face while the actual position was GBP 30 million. Corrected risks are -GBP 18,000/bp and -GBP 12,000/bp:
 
-\[
+$$
 RatesPnL=+GBP\ 144,000
-\]
+$$
 
-\[
+$$
 SpreadPnL=-GBP\ 180,000
-\]
+$$
 
 The corrected explained amount is -GBP 9,000, leaving -GBP 117,000.
 
 The closing evaluated price also fell by 0.39 points because of a source-methodology change:
 
-\[
+$$
 30,000,000\times\frac{-0.39}{100}
 =-GBP\ 117,000
-\]
+$$
 
 The bridge now reconciles:
 
-\[
+$$
 -126=144-180+9+20-2-117
-\]
+$$
 
 The important lesson is operational: a large residual often identifies scope, units, source or lineage problems. “Markets are nonlinear” is not a sufficient explanation.
 
@@ -138,9 +138,9 @@ The order matters. Applying spread first and rates second may allocate cross-eff
 
 Because:
 
-\[
+$$
 DirtyPrice=CleanPrice+AccruedInterest
-\]
+$$
 
 a bridge comparing dirty actual PnL with clean-price market moves must explain accrued-interest movement separately.
 

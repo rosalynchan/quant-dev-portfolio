@@ -18,9 +18,9 @@ A bond-futures short can normally choose an eligible government bond from a deli
 
 A simplified invoice relationship is:
 
-\[
+$$
 InvoicePrice=FuturesPrice\times ConversionFactor+AccruedInterest
-\]
+$$
 
 Actual implementation also requires the contract multiplier, quotation convention, rounding and exchange delivery rules.
 
@@ -30,15 +30,15 @@ The cheapest-to-deliver bond, or CTD, is the deliverable that minimises the shor
 
 A common approximation is:
 
-\[
+$$
 FuturesDV01\approx\frac{CTD\ CashDV01}{ConversionFactor}
-\]
+$$
 
 If CTD cash DV01 is GBP 72/bp and the conversion factor is 0.80:
 
-\[
+$$
 FuturesDV01\approx72/0.80=GBP\ 90/bp
-\]
+$$
 
 This is a practical local sensitivity, not a complete option-adjusted futures model. It does not fully capture CTD switching, delivery optionality, basis, convexity or financing.
 
@@ -54,39 +54,39 @@ Assume:
 
 The long futures DV01 is:
 
-\[
+$$
 -72/0.80=-GBP\ 90/bp
-\]
+$$
 
 The signed contract quantity required for a DV01-neutral hedge is:
 
-\[
+$$
 N=-\frac{BookDV01}{LongFuturesDV01}
-\]
+$$
 
-\[
+$$
 N=-\frac{-125,000}{-90}=-1,388.89
-\]
+$$
 
 The negative sign means short. Rounding gives 1,389 short contracts.
 
 Residual DV01 is:
 
-\[
+$$
 -125,000+1,389\times90=+GBP\ 10/bp
-\]
+$$
 
 ### Beta-Adjusted Hedge
 
 If the estimated relationship between the book and futures hedge is 0.95:
 
-\[
+$$
 EffectiveFuturesDV01=90\times0.95=GBP\ 85.5/bp
-\]
+$$
 
-\[
+$$
 Contracts=125,000/85.5=1,461.99
-\]
+$$
 
 The beta-adjusted recommendation is 1,462 short contracts.
 
@@ -108,9 +108,9 @@ The cash book may concentrate risk at 7Y and 15Y while the futures CTD behaves m
 
 A simplified basis is:
 
-\[
+$$
 Basis=CashPrice-FuturesPrice\times CF
-\]
+$$
 
 Basis movement creates PnL even when outright duration is hedged.
 
@@ -132,15 +132,15 @@ The accurate desk statement is: the position may be DV01-neutral while retaining
 
 If yields rise 4bp:
 
-\[
+$$
 UnhedgedPnL=-125,000\times4=-GBP\ 500,000
-\]
+$$
 
 For 1,389 short contracts:
 
-\[
+$$
 FuturesPnL=1,389\times90\times4=+GBP\ 500,040
-\]
+$$
 
 Linear net PnL is GBP 40. If actual hedged PnL is -GBP 18,000, investigate curve shape, basis, CTD, convexity, financing, execution price, timing, fees and stale risk before calling it a pricing error.
 

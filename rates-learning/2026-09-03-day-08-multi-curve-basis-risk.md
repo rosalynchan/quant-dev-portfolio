@@ -16,25 +16,25 @@ A single total DV01 cannot answer this. The investigation needs curve-family att
 
 For an unfixed floating coupon:
 
-[
+$$
 FloatingCF_i=N(F_i+s)alpha_i
-]
+$$
 
 The forward (F_i) comes from an index-specific **projection curve**. It estimates the future contractual rate.
 
 The cash flow is then discounted:
 
-[
+$$
 PV_i=FloatingCF_i	imes DF(t_i)
-]
+$$
 
 The discount factor comes from the **discount curve**. It converts a future amount into present value.
 
 Therefore:
 
-[
+$$
 PV_{float}=Nsum_i(F_i+s)alpha_iDF(t_i)
-]
+$$
 
 A single-curve model uses one curve for both jobs. It remains useful for intuition, but production systems normally make the curve set explicit because collateral context, reference indices, basis spreads and hedge instruments differ.
 
@@ -52,44 +52,44 @@ Consider a simplified receive-floating leg:
 
 The first cash flow and PV are:
 
-[
+$$
 CF_1=10{,}000{,}000	imes0.0400	imes0.5
 =GBP 200{,}000
-]
+$$
 
-[
+$$
 PV_1=200{,}000	imes0.980=GBP 196{,}000
-]
+$$
 
 The second cash flow and PV are:
 
-[
+$$
 CF_2=10{,}000{,}000	imes0.0420	imes0.5
 =GBP 210{,}000
-]
+$$
 
-[
+$$
 PV_2=210{,}000	imes0.955=GBP 200{,}550
-]
+$$
 
 Total floating-leg PV is GBP 396,550.
 
 If both projected forwards rise by 1bp:
 
-[
+$$
 ProjectionDV01
 =
 10{,}000{,}000	imes0.5	imes0.0001
 	imes(0.980+0.955)
-]
+$$
 
-[
+$$
 ProjectionDV01=+GBP 967.50/bp
-]
+$$
 
 Now keep forwards unchanged but move discount factors to 0.9798 and 0.9546:
 
-[
+$$
 PV'_{float}
 =
 200{,}000	imes0.9798
@@ -97,13 +97,13 @@ PV'_{float}
 210{,}000	imes0.9546
 =
 GBP 396{,}426
-]
+$$
 
 Discounting PnL is:
 
-[
+$$
 396{,}426-396{,}550=-GBP 124
-]
+$$
 
 Projection changes alter expected cash-flow amounts. Discount changes alter the present value of those cash flows. A production explain should preserve that distinction.
 
@@ -111,22 +111,22 @@ Projection changes alter expected cash-flow amounts. Discount changes alter the 
 
 For a receive-fixed swap:
 
-[
+$$
 PV_{swap}
 =
 NKsum_ialpha_iDF_i
 -
 Nsum_jF_jalpha_jDF_j
-]
+$$
 
 Setting PV to zero gives:
 
-[
+$$
 K_{par}
 =
-rac{sum_jF_jalpha_jDF_j}
-{sum_ialpha_iDF_i}
-]
+rac{\sum_jF_jalpha_jDF_j}
+{\sum_ialpha_iDF_i}
+$$
 
 The par rate therefore depends on projected forwards, discount factors, both schedules, accrual conventions and known fixings. A wrong par rate may be caused by curve mapping or coupon state, not only by a bad displayed quote.
 

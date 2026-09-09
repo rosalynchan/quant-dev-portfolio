@@ -16,9 +16,9 @@ The question is more subtle than it sounds. A useful answer must distinguish con
 
 **Carry** usually refers to the economic accrual earned or paid while holding a position. For a simplified swap, one-day net coupon carry can be approximated by:
 
-[
-Carry approx N(K-F)Delta t
-]
+$$
+Carry \approx N(K-F)\Delta t
+$$
 
 where (N) is notional, (K) is the fixed coupon, (F) is the expected floating rate and (Delta t) follows the relevant day-count convention.
 
@@ -26,9 +26,9 @@ where (N) is notional, (K) is the fixed coupon, (F) is the expected floating rat
 
 **Theta** is commonly defined as the PV change produced by advancing the valuation clock under a controlled frozen-market convention:
 
-[
+$$
 Theta = PV(t_1,Roll(M_0))-PV(t_0,M_0)
-]
+$$
 
 Terminology varies. One desk may define theta as carry plus roll-down; another may report those components separately. The methodology therefore belongs in the result contract, not in tribal knowledge.
 
@@ -46,24 +46,24 @@ Consider a simplified receive-fixed swap:
 
 The coupon carry is:
 
-[
+$$
 50{,}000{,}000 	imes (0.045-0.040) / 365
 = GBP 684.93
-]
+$$
 
 A receive-fixed position benefits when the applicable par rate falls. Its approximate roll-down PnL is:
 
-[
+$$
 GBP 22{,}000/bp 	imes 0.8bp
 = GBP 17{,}600
-]
+$$
 
 If the desk defines theta as carry plus roll-down:
 
-[
-Theta approx 684.93 + 17{,}600
+$$
+Theta \approx 684.93 + 17{,}600
 = GBP 18{,}284.93
-]
+$$
 
 The trader’s GBP 18,000 gain can therefore be economically plausible without an observed market move.
 
@@ -83,13 +83,13 @@ S2: opening positions + Monday close market + Monday clock
 
 Then:
 
-[
+$$
 TimePnL = PV(S1)-PV(S0)
-]
+$$
 
-[
+$$
 MarketPnL = PV(S2)-PV(S1)
-]
+$$
 
 S1 is counterfactual: time has advanced, but market inputs are derived from the prior snapshot through an approved roll rule.
 

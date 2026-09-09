@@ -10,21 +10,21 @@ A trader reports that a receive-floating coupon fixed 30bp above the prior forwa
 
 ## Coupon Lifecycle
 
-[
+$$
 Coupon=N(L+s)\alpha
-]
+$$
 
 Before fixing, (L) is unknown and the coupon uses projected forward (F):
 
-[
+$$
 ProjectedCoupon=N(F+s)\alpha
-]
+$$
 
 After publication:
 
-[
+$$
 FixedCoupon=N(L_{obs}+s)\alpha
-]
+$$
 
 The fixed amount no longer depends on the projection curve, although discount risk remains until payment. After settlement, the cash flow leaves future PV and enters cash accounting.
 
@@ -34,27 +34,27 @@ Accrual dates, fixing date, publication timestamp, and payment date are distinct
 
 Consider a receive-floating coupon with GBP 20,000,000 notional, 0.25 accrual fraction, prior forward 4.20%, observed fixing 4.50%, and payment discount factor 0.995.
 
-[
+$$
 ProjectedCF=20{,}000{,}000\times0.042\times0.25
 =GBP\ 210{,}000
-]
+$$
 
-[
+$$
 FixedCF=20{,}000{,}000\times0.045\times0.25
 =GBP\ 225{,}000
-]
+$$
 
-[
+$$
 FixingPnL\approx(225{,}000-210{,}000)\times0.995
 =+GBP\ 14{,}925
-]
+$$
 
 Before fixing, approximate forward sensitivity is:
 
-[
+$$
 20{,}000{,}000\times0.25\times0.0001\times0.995
 =GBP\ 497.50/bp
-]
+$$
 
 After fixing, that projection sensitivity should be near zero. Discount sensitivity remains.
 
@@ -66,13 +66,13 @@ S1: same positions + current curves + fixing still projected
 S2: same positions + current curves + observed fixing applied
 ```
 
-[
+$$
 MarketPnL=PV(S1)-PV(S0)
-]
+$$
 
-[
+$$
 FixingPnL=PV(S2)-PV(S1)
-]
+$$
 
 This isolates the projected-to-observed replacement under the same current curves.
 

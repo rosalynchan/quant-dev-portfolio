@@ -20,21 +20,21 @@ The useful questions are:
 
 Macaulay duration is the PV-weighted average timing of cash flows:
 
-\[
+$$
 D_{Mac}=\frac{\sum_i t_iPV(CF_i)}{P}
-\]
+$$
 
 Modified duration converts it to price sensitivity:
 
-\[
+$$
 D_{mod}=\frac{D_{Mac}}{1+y/m}
-\]
+$$
 
 For a small yield change:
 
-\[
+$$
 \frac{\Delta P}{P}\approx-D_{mod}\Delta y
-\]
+$$
 
 Duration is not maturity. Equal-maturity bonds can have different durations because coupons, yields, amortisation and embedded options differ.
 
@@ -42,17 +42,17 @@ Duration is not maturity. Equal-maturity bonds can have different durations beca
 
 Signed DV01 can be defined by bump-and-revalue:
 
-\[
+$$
 DV01_{signed}=PV(y+1bp)-PV(y)
-\]
+$$
 
 For a long option-free bond it is normally negative. The duration approximation is:
 
-\[
+$$
 DV01\approx-PD_{mod}0.0001
-\]
+$$
 
-The value \(P\) must be the agreed position value. A per-100 clean price cannot be treated as monetary position PV.
+The value $P$ must be the agreed position value. A per-100 clean price cannot be treated as monetary position PV.
 
 “DV01” is not a complete contract. It may mean yield DV01, curve PV01, key-rate DV01 or spread DV01. Every result needs a shock target and methodology.
 
@@ -60,33 +60,33 @@ The value \(P\) must be the agreed position value. A per-100 clean price cannot 
 
 Assume a GBP 10,000,000 position, modified duration 7.0, convexity 65 and a +50bp yield move.
 
-\[
+$$
 DV01\approx-10,000,000\times7.0\times0.0001
 =-GBP\ 7,000/bp
-\]
+$$
 
 Linear PnL is:
 
-\[
+$$
 -7,000\times50=-GBP\ 350,000
-\]
+$$
 
 For a larger move, add convexity:
 
-\[
+$$
 \frac{\Delta P}{P}
 \approx-D_{mod}\Delta y+\frac{1}{2}C(\Delta y)^2
-\]
+$$
 
-\[
+$$
 \frac{1}{2}\times65\times0.005^2=0.0008125
-\]
+$$
 
 The convexity contribution is GBP 8,125, so:
 
-\[
+$$
 EstimatedPnL=-350,000+8,125=-GBP\ 341,875
-\]
+$$
 
 If full revaluation gives -GBP 342,300, the residual is -GBP 425. Higher-order effects, a non-parallel curve move, cash-flow timing, compounding or convention differences may explain it. DV01 was useful; it was never intended as exact large-move valuation.
 

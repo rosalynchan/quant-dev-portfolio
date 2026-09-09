@@ -12,22 +12,22 @@ The investigation must align scope, position population, valuation cuts, curves,
 
 ## Total PnL and Explained PnL
 
-[
+$$
 Total\ PnL=PV_{close}-PV_{open}
-]
+$$
 
 A practical bridge is:
 
-[
+$$
 Total=
 Market+Carry+Activity+Cash+Fixing+FX+Model/Data+Residual
-]
+$$
 
 Market PnL should normally hold the opening population fixed while replacing opening market data with closing market data:
 
-[
+$$
 MarketPnL=PV(P_{open},M_{close})-PV(P_{open},M_{open})
-]
+$$
 
 This prevents new trades, cancellations, amendments, and population-feed differences from contaminating the market component.
 
@@ -35,9 +35,9 @@ This prevents new trades, cancellations, amendments, and population-feed differe
 
 Opening PV is GBP 2,400,000 and closing PV is GBP 2,290,000:
 
-[
+$$
 TotalPnL=-GBP\ 110k
-]
+$$
 
 | Component | PnL |
 |---|---:|
@@ -50,15 +50,15 @@ TotalPnL=-GBP\ 110k
 
 Explained PnL is:
 
-[
+$$
 -84+12+35-8-50-10=-GBP\ 105k
-]
+$$
 
 Residual is:
 
-[
+$$
 -110-(-105)=-GBP\ 5k
-]
+$$
 
 The bridge identifies market movement and settlements as the main losses, partly offset by new trades and carry. The remaining negative GBP 5,000 is a diagnostic amount to compare with tolerance.
 
@@ -78,9 +78,9 @@ S4: cash, fixing, FX, and model-data adjustments
 
 Each component is:
 
-[
+$$
 Component_i=PV(S_{i+1})-PV(S_i)
-]
+$$
 
 Some effects are path-dependent. Moving market first and rolling time second may allocate cross-effects differently from the reverse order. The explain method and component order must therefore be versioned.
 
