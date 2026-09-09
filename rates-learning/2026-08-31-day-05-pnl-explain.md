@@ -68,13 +68,11 @@ Suppose bucketed DV01 multiplied by market moves predicts negative GBP 81,000 wh
 
 A reproducible engine stores state transitions:
 
-```text
-S0: opening positions + opening market + opening time
-S1: opening positions + closing market + opening time
-S2: opening positions + closing market + closing time
-S3: closing positions + closing market + closing time
-S4: cash, fixing, FX, and model-data adjustments
-```
+- **S0:** opening positions + opening market + opening time
+- **S1:** opening positions + closing market + opening time
+- **S2:** opening positions + closing market + closing time
+- **S3:** closing positions + closing market + closing time
+- **S4:** cash, fixing, FX, and model-data adjustments
 
 Each component is:
 

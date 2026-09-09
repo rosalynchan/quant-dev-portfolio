@@ -176,16 +176,14 @@ Post-build controls should cover calibration residuals, positive discount factor
 
 Useful metrics include:
 
-```text
-curve_build_success_total
-curve_build_failure_total
-curve_snapshot_age_seconds
-quote_age_seconds{instrument}
-curve_repricing_error_bp{instrument}
-curve_node_move_bp{tenor}
-curve_fallback_total{reason}
-pricing_requests_by_curve_version
-```
+- `curve_build_success_total`
+- `curve_build_failure_total`
+- `curve_snapshot_age_seconds`
+- `quote_age_seconds{instrument}`
+- `curve_repricing_error_bp{instrument}`
+- `curve_node_move_bp{tenor}`
+- `curve_fallback_total{reason}`
+- `pricing_requests_by_curve_version`
 
 ## Production Failure Modes
 
