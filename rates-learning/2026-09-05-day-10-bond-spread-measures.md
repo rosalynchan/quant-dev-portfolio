@@ -16,9 +16,9 @@ The numbers may not be comparable. One may be a government spread, another a Z-s
 
 A simple mental model is:
 
-[
+$$
 BondYield=ReferenceRate+Spread
-]
+$$
 
 Spread can reflect credit risk, liquidity, funding, optionality, supply and demand, plus benchmark methodology. It is not a pure default probability and does not by itself establish that a bond is cheap or rich.
 
@@ -28,27 +28,27 @@ On a long cash-bond position, spread widening generally lowers price; spread tig
 
 **G-spread** compares bond yield to a government benchmark:
 
-[
+$$
 GSpread=BondYTM-GovernmentYield
-]
+$$
 
 It is simple but highly dependent on benchmark selection.
 
 **I-spread** compares bond yield with an interpolated swap rate:
 
-[
+$$
 ISpread=BondYTM-InterpolatedSwapRate
-]
+$$
 
 The swap-curve family and interpolation method matter.
 
 **Z-spread** is the constant spread added to each point of a risk-free spot curve so that discounted cash flows reproduce the observed dirty price:
 
-[
+$$
 Price
 =
-sum_i CF_iDF_{riskfree}(t_i)e^{-s t_i}
-]
+\sum_i CF_iDF_{riskfree}(t_i)e^{-s t_i}
+$$
 
 It uses the full cash-flow schedule and curve rather than two summary yields.
 
@@ -60,15 +60,15 @@ It uses the full cash-flow schedule and curve rather than two summary yields.
 
 If a corporate bond YTM is 6.60% and its government benchmark yields 4.40%:
 
-[
+$$
 GSpread=6.60%-4.40%=220bp
-]
+$$
 
 If yesterday’s spread was 211bp:
 
-[
+$$
 SpreadMove=220-211=+9bp
-]
+$$
 
 The level is 220bp; the move is +9bp. Data contracts should not confuse them.
 
@@ -83,29 +83,29 @@ Consider a simplified bond with:
 
 Solve for (s):
 
-[
+$$
 96
 =
 5	imes0.96e^{-s}
 +
 105	imes0.91e^{-2s}
-]
+$$
 
 At (s=2.27%):
 
-[
+$$
 5	imes0.96e^{-0.0227}approx4.692
-]
+$$
 
-[
+$$
 105	imes0.91e^{-0.0454}approx91.307
-]
+$$
 
 The sum is approximately 95.999, so:
 
-[
+$$
 ZSpreadapprox227bp
-]
+$$
 
 An internal value of 227bp can therefore be correct even when a vendor’s G-spread is 218bp.
 
@@ -113,15 +113,15 @@ An internal value of 227bp can therefore be correct even when a vendor’s G-spr
 
 Spread sensitivity may be called CS01, spread DV01 or credit-spread DV01. The exact convention must be explicit.
 
-[
+$$
 CS01_{signed}=PV(spread+1bp)-PV(spread)
-]
+$$
 
 For a long bond, signed CS01 is normally negative. If CS01 is -GBP 8,000/bp and spread widens 9bp:
 
-[
+$$
 SpreadPnLapprox-8{,}000	imes9=-GBP 72{,}000
-]
+$$
 
 This is a linear explain, not complete daily PnL. Risk-free rates, carry, accrual, convexity, optionality, FX and position activity may also contribute.
 
