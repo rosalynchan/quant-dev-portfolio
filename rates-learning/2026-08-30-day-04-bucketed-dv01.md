@@ -12,9 +12,9 @@ A trader asks why Book B lost nearly twice as much as Book A even though both sh
 
 Parallel DV01 is the PV change when the relevant curve is shifted upward by one basis point:
 
-[
+$$
 DV01_{parallel}=PV(C+1bp)-PV(C)
-]
+$$
 
 It is concise, useful for direction and scale, and effective for a quick sanity check. Its weakness is information loss: it does not identify where along the curve the exposure resides.
 
@@ -22,15 +22,15 @@ It is concise, useful for direction and scale, and effective for a quick sanity 
 
 Bucketed or key-rate DV01 shocks one tenor region at a time:
 
-[
+$$
 DV01_k=PV(C+bump_k)-PV(C)
-]
+$$
 
 If bucket shocks collectively reproduce a parallel move:
 
-[
+$$
 DV01_{parallel}\approx\sum_kDV01_k
-]
+$$
 
 The equality may be approximate because curve rebuilding, interpolation, nonlinear pricing, cross-curve effects, and incomplete bucket grids can create reconciliation differences.
 
@@ -53,17 +53,17 @@ Now consider a shape move:
 
 For Book A:
 
-[
+$$
 PnL_A\approx(-2\times10)+(-3\times4)+(-5\times-3)
 =-GBP\ 17k
-]
+$$
 
 For Book B:
 
-[
+$$
 PnL_B\approx(-8\times10)+(6\times4)+(-8\times-3)
 =-GBP\ 32k
-]
+$$
 
 The same total DV01 produces very different PnL because Book B carries substantially more short-end exposure.
 
@@ -75,9 +75,9 @@ A **zero-node bump** changes a node in the curve representation and re-interpola
 
 A **market-quote bump** changes a calibration quote and rebuilds the curve:
 
-[
+$$
 QuoteRisk_i=PV(Build(Q+1bp_i))-PV(Build(Q))
-]
+$$
 
 This maps more closely to observable instruments and trader language, but it requires deterministic curve construction and is more expensive.
 
