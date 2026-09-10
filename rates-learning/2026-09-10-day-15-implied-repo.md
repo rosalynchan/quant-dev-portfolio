@@ -109,7 +109,7 @@ If two systems disagree on CTD ranking, “different formula” is not enough. T
 
 ## Engineering Design
 
-\`\`\`python
+```python
 from dataclasses import dataclass
 from decimal import Decimal
 
@@ -145,7 +145,7 @@ def implied_repo(x: ImpliedRepoInput) -> Decimal:
         * Decimal(x.day_basis)
         / Decimal(x.days_to_delivery)
     )
-\`\`\`
+```
 
 A production result should also carry calculation status, price sides, settlement and delivery dates, coupon-reinvestment policy, basket version, market snapshot, and methodology version.
 
